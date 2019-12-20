@@ -74,11 +74,12 @@
         </nav>
 
         <main class="py-4">
-            <div class="container">
-                <div class="border-4 border-gray-300 max-w-5xl m-auto">
-                    <div class="m-5">
+            <div class="flex mx-3">
+                <div class="w-56 mr-3 bg-red-400">
+                    side bar
+                </div>
+                <div class="border-4 border-gray-300 container-fluid">
                         @yield('content')
-                    </div>
                 </div>
             </div>
         </main>
