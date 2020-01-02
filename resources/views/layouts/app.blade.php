@@ -74,19 +74,25 @@
         </nav>
 
         <main class="py-4">
+            @auth
             <div class="flex mx-3">
                 <div class="w-56 mr-3 bg-red-400">
                     side bar
                 </div>
                 <div class="border-4 border-gray-300 container-fluid">
+            @endauth
                         @yield('content')
+            @auth
                 </div>
             </div>
+            @endauth
         </main>
     </div>
+    @auth
     <footer>
         <div class="w-screen bg-blue-500 h-24"></div>
         <div class="text-center py-4">Copyright</div>
     </footer>
+    @endauth
 </body>
 </html>
